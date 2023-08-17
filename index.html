@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prducts</title>
+    <link rel="stylesheet" href="products.css">
+    <script src="https://kit.fontawesome.com/38bd4d5857.js" crossorigin="anonymous"></script>
+<body>
+    <section class="crud">
+        <div class="heading">
+            <h2>crud</h2>
+            <p>product management system</p>
+        </div>
+        <div class="input">
+            <input type="text" class="title" placeholder="title">
+            <div id="price">
+                <input type="number" class="price" placeholder="price" onkeyup="keyUp()">
+                <input type="number" class="taxes" placeholder="taxes" onkeyup="keyUp()">
+                <input type="number" class="ads" placeholder="ads" onkeyup="keyUp()">
+                <input type="number" class="discount" placeholder="discount" onkeyup="keyUp()">
+                <p class="alert">The discount should not be greater than 100%</p>
+                <small id="total"></small>
+            </div>
+            <input type="number" class="count" placeholder="count">
+            <input type="text" class="category" placeholder="category">
+            <button id="create">Create <i class="fa-solid fa-circle-plus"></i></button>
+        </div>
+        <div class="output">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+                <div id="deleteAll"></div>
+                <tbody class="tableBody">
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="products.js"></script>
+</body>
+</html>

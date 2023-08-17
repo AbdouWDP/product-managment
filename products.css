@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: "tajawal";
+    
+}
+.crud{
+    width: 80%;
+    margin: auto;
+    font-family: "tajawal";
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+input{
+    width: 100%;
+    height: 50px;
+    background-color: #111;
+    color: white;
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-family: "tajawal";
+    font-size: 16px;
+    border-radius: 2px;
+}
+input::placeholder{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+#price input{
+    width: 20%;
+    appearance: textfield;
+}
+.count{
+    appearance: textfield;
+}
+#total{
+    background-color: #E5383B;
+    padding: 8px;
+}
+#total::before{
+    content: "Total: ";
+}
+button{
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+}
+#create,#update,#del{
+    background-color: #0075a5;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .2s;
+}
+#del{
+    background-color: #E5383B;
+}
+#create{
+    margin-top: 20px;
+    margin-left: 42%;
+    width: 200px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+#searchByTitle,#searchByCategory{
+    background-color: #0075a5;
+    color: white;
+    border-radius: 2px;
+    width: 45%;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.buttons button:hover,#create:hover{
+    background-color: #12a0d8;
+}
+table{
+    margin: 40px 0; 
+    width: 100%;
+    text-align: center;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+    font-size: 18px;
+}
+td{
+    font-size: 16px;
+    font-family: "roboto";
+    text-transform: capitalize;
+}
+.fa-circle-plus{
+    font-size: 16px;
+}
+.alert{
+    position: absolute;
+    color: #E5383B;
+    left: 75.3em;
+    font-size: 12px;
+    display: none;
+    transition: .2s;
+}
+#deleteAll{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+#deleteAllProduct{
+    background-color: #E5383B;
+    color: white;
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
